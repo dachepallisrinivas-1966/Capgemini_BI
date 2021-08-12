@@ -1,0 +1,157 @@
+UI (Front-End) Module
+----------------------------
+HTML 5
+CSS 3
+JavaScript 
+
+
+
+HTML
+
+HyperText Markup Language
+
+hypertext
+	text + audio + video + images
+
+programming language
+	compiler 
+	
+
+	source code (sample.c) -> compiler -> object code (intermediate code) - (sample.obj)
+
+	object code (sample.obj) -> [...] -> operating system -> hardware -> execute
+
+
+HTML Tags
+	1) paired tags	-	open and close tags
+	2) unpaired tags -	self-closed tags
+
+is HTML case sensitive language?
+	no.
+	lower-case is recommended.
+
+.html (or) .htm 
+	extension for any html program.
+
+
+head	:	title
+body	:	web page design
+
+
+web client : browser -> chrome, edge, firefox, opera, safari
+cross-browser compatibitly
+
+<html>
+	<head>
+		
+	</head>
+	<body>
+		t
+		h
+		i
+		s is a paragraph
+		written by me
+		for the sake of learning
+		HTML.
+	</body>
+</html>
+
+popular IDE:
+----------------
+1) visual studio code
+2) sublime
+3) atom
+4) brackets
+
+
+what is the difference between tag and element?
+
+	<h1>This is heading1</h1>	=>	open-tag + context + closing-tag
+
+elements are of two types:
+	a) inline element	-	b,i,u
+	b) block element	-	occupy entire line of the browser
+					h1,h2,h3,...
+	
+
+1) formatting tags
+	heading tags -  h1,h2,h3,h4,h5,h6
+	formatting tags - b,i,u,sup,sub,strike
+
+
+<br />	
+
+attributes:
+<p> sjdklasjdklaslkjkladjkljadslk </p>
+align = "left | center | right | justify"
+
+
+Lists:
+-------
+1) ordered List (numbered list)
+	<ol> 
+
+		attributes:
+		type = "A | a | I | i"
+
+		<ol type="A">
+	<li>
+
+
+2) unordered List (bulleted list)
+	<ul>
+	<li>
+
+		attributes:
+		type="square | circle | disc"
+
+HTML Semantic Elements
+------------------------
+<strong>	instead 	of	<b>
+<em>		instead		of	<i>
+
+
+
+Courses Offered
+1. UI Development
+	a. HTML 5
+	b. CSS 3
+	c. Javascript
+2. Databases
+	a. Oracle
+	b. MySQL
+3. Backend
+	a. Java
+	b. MS.Net
+4. Testing
+	a. Selenium
+	b. JUnit
+
+what is diff between <div> and <span> ?
+<div> to group HTML elements.
+<div> is block element.
+
+<span> is a place holder of text
+	where the content can be replaced by the developer.
+<span> is inline element.
+
+<p>  vs  <div>   vs  <span>
+
+
+
+
+			
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+
