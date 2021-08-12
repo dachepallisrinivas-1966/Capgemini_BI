@@ -138,11 +138,59 @@ what is diff between <div> and <span> ?
 <p>  vs  <div>   vs  <span>
 
 
+<font>
+</font>
+BI 
+
+<div> element is a block level element that can be used as a container for other HTML elements
+
+<span> element is an inline element that can be used as a container for text.
+
+<span style="color:blue;font-weight:bold"> static </span> 
+
+<ul style="list-style-type:square">
 
 
-			
+
+<img />
+attributes	
+	-	src
+	-	alt
+	-	width
+	-	height
+Never use height attribute on <img />
+height is adjusted proportionately as per width.
+
+anchor tag:
+<a>text</a>
+attributes	
+	-	href
+	-	target = "_self | _blank"
 
 
+<table>
+	<tr>	table row
+	<td>	table data
+	<th>	table heading
+
+attributes
+	border	= "1 | 2 | 3 | 4 | 5 | 6"
+	width
+	align
+	cellpadding	-	should be given to table tag
+	cellspacing	-	should be given to table tag
+	rowspan
+	colspan
+Semantic tags:
+	thead
+	tbody
+	tfoot
+
+
+HTML entites
+	&copy;		copyright symbol
+	&reg;		registered symbol
+	&nbsp;		non-breaking space symbol
 
 
 
