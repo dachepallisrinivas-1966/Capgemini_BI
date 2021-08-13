@@ -1,0 +1,33 @@
+caption {
+    font-family : 'Arial Black';
+    border-radius: 10px 10px 0 0;
+    background-color:#000000;
+    color:#ffffff;
+    padding:5px;
+}
+table {
+    border : 2px solid black;
+    border-radius : 0 0 10px 10px;
+    width:40%;
+    margin:auto;
+    margin-top:50px;
+}
+th, td {
+    padding: 5px;
+    border-bottom:1px dotted red;
+}
+tr:last-child td {
+    border-bottom: 0;
+}
+td:nth-child(1), td:nth-child(3) {
+    text-align:right;
+}
+td:nth-child(4), td:nth-child(5) {
+    text-align:center;
+}
+td:nth-child(3)::before {
+    content: 'INR. ';       /* &#8377; - not working */
+}
+td:nth-child(3)::after {
+    content:' /-';
+}

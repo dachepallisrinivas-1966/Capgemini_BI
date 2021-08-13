@@ -384,6 +384,10 @@ selector is a string that qualify element(s) to be applied with the style.
 +	pseudo selector
 		a:hover
 		
+		last-child
+		first-child
+		nth-child(number)
+
 
 
 external style sheet:
