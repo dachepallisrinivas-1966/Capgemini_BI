@@ -330,7 +330,72 @@ checkbox:
             <button type="button" onclick="alert('Hai!')">Click Me</button>
         </p>
     </form>
-	
+
+html.com/blog/html-5-cheat-sheets/	
+=======================================================================================
+
+										
+										
+										CSS-3
+CSS stands for Cascading Style Sheet
+purpose is to style (decorate) html document.,
+
++ CSS offer common uniform properties unlike html
++ CSS can provide styling across grouped elements
++ CSS can isolate styling from content. (SoC - Seperation of concern)
++ This offer maintainability.
+
+3 types.
+	+	inline
+	+	embedded 
+	+	external
+
+inline styling:
+---------------
+	it is applied using "style" attribute.
+
+	<tagName style="css-property:value; css-property:value;">
+		content
+	</tagName>
+
+embedded styling:
+-----------------
+it is applied using <style> tag.
+<style> tag should be used inside <head> tag.
+
+<head>
+	<style>
+		selector {
+			css-property : value;
+			css-property : value;
+			..	..	..	..
+		}
+	</style>
+</head>
+
+selector is a string that qualify element(s) to be applied with the style.
+
++	element selector	(tag selector)
++	class selector	(.)
++	id selector		(#)
+	one html element should have a unique id.
+	id cannot be repeated for other element.
++	attribute selector
++	pseudo selector
+		a:hover
+		
+
+
+external style sheet:
+---------------------
+	style is defined in a separate file with the extension ".css"
+	this file can be linked to any no. of html pages using <link> tag.
+
+	<head>
+		...
+		<link href="fileName.css" rel="stylesheet" />
+	</head>
+
 
 
 

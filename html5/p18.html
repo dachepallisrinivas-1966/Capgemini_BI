@@ -44,6 +44,22 @@
             </select>
         </div>
         <div>
+            <label for="td">Enter department</label>
+            <input type="text" list="depts" required id="td" name="tdept"/>
+            <datalist id="depts">
+                <option value="Operations"  />
+                <option value="Delivery" selected />
+                <option value="Production" />
+                <option value="Analysis" />
+                <option value="HR" />
+                <option value="IT" />
+            </datalist>
+        </div>
+        <div>
+            <label for="tf">Attach your photo: </label>
+            <input type="file" id="tf" name="tf" />
+        </div>
+        <div>
             <button type="submit">Register</button>
         </div>
     </form>
