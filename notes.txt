@@ -434,9 +434,12 @@ operators:
 	>	<	>=	<=	==	!=
 3) increment / decrement operators	
 	++	--
-
-3) special operartors
-	=	(assignment operator)
+4) assignment operators:
+	=		+=		-=		*=		/=		%=
+5) logical operators:	to combine conditions
+	&&	(and)
+	||	(or)
+	!	(not)
 
 control structures (control statements):
 -----------------------------------------
@@ -494,13 +497,20 @@ statements within a loop are executed repeatedly.
 	statements within the for loop are executed repeatedly as long as the 
 	condition is true.
 
+	when we know how many times that we want to execute loop priorly,
+	we have to use for loop.
+
 	for(initialization; condition; inc/dec) {
 		statement(s);
 	}
+
 2) while loop		(top tested / entry tested)
 	statements within the while loop are executed repeatedly as long as the 
 	condition is true.
 
+	when we don't know how many times that we want to execute loop priorly,
+	we have to use while loop.
+	
 	while (condition) {
 		statement(s);
 	}
@@ -513,6 +523,106 @@ statements within a loop are executed repeatedly.
 	do {
 		statement(s);
 	} while (condition);
+
+
+
+library functions 
+------------------
+1) string functions (methods)
+
+	+	string concatenation operator
+
+	a) length property	:	return the no. of characters in the string
+	b) charAt(index)	:	return the character at given index
+	c) substr(start-index, num_of_characters)
+	d) substring(start-index-inclusive, end-index-exclusive)
+	e) indexOf(string) : return the index of 'string'
+	f) toLowerCase()
+	g) toUpperCase()
+
+2) Math class
+	a) PI property
+	b) sqrt(n)
+	c) pow(x, y)
+	d) ceil(n)	: return the next integer of n.
+	e) floor(n) : return the previous integer of n.
+	f) round(n)
+	g) trunc(n)
+	h) random()	: return a number between 0 and 1 randomly 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+today = new Date();
+console.log(today);
+
+myDob = new Date("1985-06-11");
+console.log(myDob);
+
+age = today.getFullYear()-myDob.getFullYear();
+console.log(age);
+
+console.log(today.toISOString());
+console.log(today.toDateString());
+console.log(today.toTimeString());
+
+//ISO format: yyyy-mm-ddThh:mm:ss 
+
+name = "VAMSY";
+
+for(i=0;i<name.length;i++){
+    console.log(name.substring(0,i+1));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+arr1 = [];
+arr2 = new Array();
+
+arr3 = ["Rahul","Vamsy","Uma","Latha","Srinu"];
+
+console.log(arr3);
+console.log(arr3.length);
+
+arr3.sort();
+console.log(arr3);
+
+arr1.push("Ant");
+arr1.push("Elephant");
+arr1.push("Tiger");
+arr1.push("Zebra");
+console.log(arr1);
+
+arr1.pop();
+console.log(arr1);
+
+arr3.splice(2,2);// startIndex,countToBeDeleted
+console.log(arr3);
+
 
 
 
