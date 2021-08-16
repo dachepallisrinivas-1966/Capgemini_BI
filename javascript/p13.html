@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Arithmetic Form</title>
+        <link href="p13.css" rel="stylesheet" />
+        
+    </head>
+ 
+<body>
+    <form>
+        <fieldset>
+            <legend>
+                <h2>Calculations</h2>
+            </legend>
+            <div class="block">
+                <label>Enter Number 1: </label>
+                <input type="text" id="num1"/>
+            </div>
+            <br />
+            <div class="block">
+                <label>Enter Number 2: </label>
+                <input type="text" id="num2"/>
+            </div>
+            <br />
+            <div class="block">
+                <label>Enter operator: </label>
+                <input type="text" id="op"/>
+            </div>
+            <br />
+            <button type="button" onclick="calc()">Calculate</button>
+            <hr />
+            <strong>Result: </strong>
+            <p id="result"></p>
+        </fieldset>
+    </form>
+
+    <script src="p13.js"></script>
+    </body>
+ 
+</html>
+

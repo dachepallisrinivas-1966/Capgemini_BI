@@ -10,9 +10,11 @@
         function doCheck() {
             var a = document.getElementById("num").value;
             if (a > 0)
-                document.write(a, ' is positive');
+                // document.write(a, ' is positive');
+                document.getElementById("result").innerHTML = a + " is positive";
             else
-                document.write(a, ' is negative');
+                // document.write(a, ' is negative');
+                document.getElementById("result").innerHTML = a + " is negative";
         }
     </script>
 </head>
@@ -22,5 +24,7 @@
         <input type="text" id="num" />
         <input type="button" value="check" onclick="doCheck()" />
     </form>
+    <br />
+    <strong><div id="result"></div></strong>
 </body>
 </html>

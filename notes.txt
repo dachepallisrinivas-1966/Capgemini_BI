@@ -432,7 +432,8 @@ operators:
 	+	-	*	/	%
 2) relational operators : to compare
 	>	<	>=	<=	==	!=
-
+3) increment / decrement operators	
+	++	--
 
 3) special operartors
 	=	(assignment operator)
@@ -485,7 +486,33 @@ switch (var / expr)
 					[break;]
 }
 
+loop:
+-----
+statements within a loop are executed repeatedly.
 
+1) for loop			(top tested / entry tested)
+	statements within the for loop are executed repeatedly as long as the 
+	condition is true.
+
+	for(initialization; condition; inc/dec) {
+		statement(s);
+	}
+2) while loop		(top tested / entry tested)
+	statements within the while loop are executed repeatedly as long as the 
+	condition is true.
+
+	while (condition) {
+		statement(s);
+	}
+
+3) do .. while loop	(bottom tested / exit tested)
+
+	statements within the while loop are executed repeatedly as long as the 
+	condition is true.
+
+	do {
+		statement(s);
+	} while (condition);
 
 
 
