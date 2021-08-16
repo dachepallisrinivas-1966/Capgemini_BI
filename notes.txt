@@ -400,6 +400,99 @@ external style sheet:
 		<link href="fileName.css" rel="stylesheet" />
 	</head>
 
+=====================================================================================
+
+									javascript
+
+javascript is a client-side scripting language.
+web client : browser
+programs are executed in the browser environment.
+v6 engine (in chrome) - javascript engine that executes script.
+javascript now support server-side scripting also.
+
+javascript is noway concerned with java.
+
+client-side scripting languages:
+1. javascript
+2. vbscript
+3. jscript
+
+Node:
+	It is a run-time environment to execute javascript programs.
+ECMA 	standardize javascript.
+
+program should be saved with an extension ".js"
+
+javascript is a type-less language.
+no need to declare any variables.
+
+operators:
+------------
+1) arithmetic operators : to calculate
+	+	-	*	/	%
+2) relational operators : to compare
+	>	<	>=	<=	==	!=
+
+
+3) special operartors
+	=	(assignment operator)
+
+control structures (control statements):
+-----------------------------------------
+these are set of keywords used to change the order of program execution.
+
+if, switch, for, while, do..while, break`
+
+if:
+----
+1) it is a bi-directional decision making statement.
+2) the result of an if statement is always true or false.
+
+syntax:
+-------
+if  (condition)
+	true-statement;
+[else
+	false-statement;]
+
+condition:
+	it means comparision.
+
+elements of a condition:
+------------------------
+1) 	min. of 2 operands
+2) 	one relational operator
+
+
+switch:
+-------
+it is a multi-directional decision making statement.
+
+switch (var / expr) 
+{
+	case  label-1 : st-1;
+					st-2;
+					...
+					[break;]
+	case  label-2 : st-1;
+					st-2;
+					...
+					[break;]
+	...	...	...	...	...	...
+		default	  :	st-1;
+					st-2;
+					....
+					[break;]
+}
+
+
+
+
+
+
+
+
+
 
 
 
