@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array-to-Table</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Birth Date</th>
+        </tr>
+        <tbody id='contactTable'></tbody>
+    </table>
+    
+    <script>
+        var contacts = [
+            {'name' : 'srinivas', 'age' : '55', 'birthDate' : '09/04/1966'},
+            {'name' : 'deepa', 'age' : '44', 'birthDate' : '21/12/1977'},
+            {'name' : 'raghu', 'age' : '23', 'birthDate' : '23/05/1998'},
+            {'name' : 'ramesh', 'age' : '49', 'birthDate' : '21/01/1972'},
+            {'name' : 'vamsy', 'age' : '36', 'birthDate' : '11/06/1985'},
+        ];
+
+        buildTable(contacts);
+
+        function buildTable(data) {
+            var table = document.getElementById('contactTable');
+
+            for(var i = 0; i < data.length; i++) {
+                var row = `<tr>
+                                <td>${data[i].name}</td>
+                                <td>${data[i].age}</td>
+                                <td>${data[i].birthDate}</td>
+                            </tr>`;
+                table.innerHTML += row;
+            }
+        }
+    </script>
+</body>
+</html>

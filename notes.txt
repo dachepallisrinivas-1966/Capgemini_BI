@@ -616,6 +616,30 @@ built-in functions:
 3) confirm()
 
 	
+JSON:
+	javascript object notation.
+	it is becoming a universal format for exchanging data.
+	it is a collection of key-value pairs.
+
+{ 'empId' : '101', 'empName' : 'raghu', 'salary' : '15000'}
+
+json array:
+-------------
+[
+	{ 'empId' : '101', 'empName' : 'raghu', 'salary' : '15000'},
+	{ 'empId' : '102', 'empName' : 'kiran', 'salary' : '14000'}
+	{ 'empId' : '103', 'empName' : 'pallavi', 'salary' : '16000'}
+	{ 'empId' : '104', 'empName' : 'suman', 'salary' : '18000'}
+];
+
+(SUGAR syntax)
+template strings:
+----------------
+back quote (back tick)
+we can combine variables and literals to form an expression.
+
+
+
 
 
 

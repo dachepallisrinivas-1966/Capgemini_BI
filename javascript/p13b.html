@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Form</title>
+
+    <style>
+        label {
+            display : inline-block;
+            width : 120px;
+            padding : 10px;
+        }
+        fieldset {
+            width: 600px;
+        }
+    </style>
+
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend><h2>Arithmetic Operations</h2></legend>
+            <div class="block">
+                <label>First Number:</label>
+                <input type="text" id="n1" />
+            </div>
+            <div class="block">
+                <label>Second Number:</label>
+                <input type="text" id="n2" />
+            </div>
+            <div class="block">
+                <label>Operation:</label>
+                <input type="radio" id="r1" value="+" name="arith" />Sum
+                <input type="radio" id="r2" value="-" name="arith" />Difference
+                <input type="radio" id="r3" value="*" name="arith" />Product
+                <input type="radio" id="r4" value="/" name="arith" />Quotient
+                <input type="radio" id="r5" value="%" name="arith" />Remainder
+            </div>
+            <br />
+            <button type="button" onclick="calculate()">Calculate</button>
+            <hr />
+            <p id="result" />
+        </fieldset>
+    </form>
+
+    <script type="text/javascript">
+        function calculate() {
+            let num1 = Number(document.getElementById("n1").value);
+            let num2 = Number(document.getElementById("n2").value);
+            let rd1 = document.getElementById("r1");
+            let rd2 = document.getElementById("r2");
+            let rd3 = document.getElementById("r3");
+            let rd4 = document.getElementById("r4");
+            let rd5 = document.getElementById("r5");
+            
+            let result = 0;
+            if (rd1.checked) {
+                op = rd1.value;
+            } else if (rd2.checked) {
+                op = rd2.value;
+            } else if (rd3.checked) {
+                op = rd3.value;
+            } else if (rd4.checked) {
+                op = rd4.value;
+            } else if (rd5.checked) {
+                op = rd5.value;
+            }
+            switch (op)
+            {
+                case "+":
+                    result = num1 + num2;
+                    break;
+                case "-":
+                    result = num1 - num2;
+                    break;
+                case "*":
+                    result = num1 * num2;
+                    break;
+                case "/":
+                    result = num1 / num2;
+                    break;
+            }
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+    
+</body>
+
+
+</html>

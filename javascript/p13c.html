@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Form</title>
+
+    <style>
+        label {
+            display : inline-block;
+            width : 120px;
+            padding : 10px;
+        }
+        fieldset {
+            width: 600px;
+        }
+    </style>
+
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend><h2>Arithmetic Operations</h2></legend>
+            <div class="block">
+                <label>First Number:</label>
+                <input type="text" id="n1" />
+            </div>
+            <div class="block">
+                <label>Second Number:</label>
+                <input type="text" id="n2" />
+            </div>
+            <div class="block">
+                <label>Operation:</label>
+                <select id="arith">
+                    <option value="+">Sum</option>
+                    <option value="-">Difference</option>
+                    <option value="*">Product</option>
+                    <option value="/">Quotient</option>
+                    <option value="%">Remainder</option>
+                </select>
+            </div>
+            <br />
+            <button type="button" onclick="calculate()">Calculate</button>
+            <hr />
+            <p id="result" />
+        </fieldset>
+    </form>
+
+    <script type="text/javascript">
+        function calculate() {
+            let num1 = Number(document.getElementById("n1").value);
+            let num2 = Number(document.getElementById("n2").value);
+            let select = document.getElementById("arith");
+            let op = select.options[select.selectedIndex].value;
+            let result = 0;
+            switch (op)
+            {
+                case "+":
+                    result = num1 + num2;
+                    break;
+                case "-":
+                    result = num1 - num2;
+                    break;
+                case "*":
+                    result = num1 * num2;
+                    break;
+                case "/":
+                    result = num1 / num2;
+                    break;
+            }
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+    
+</body>
+
+
+</html>
