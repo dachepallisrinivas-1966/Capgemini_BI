@@ -1,3 +1,5 @@
+// template literal strings
+
 let empName = 'Srinivas';
 let salary = 80000;
 

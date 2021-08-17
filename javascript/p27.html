@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function sayHello() {
+            alert('hello every one');
+        }
+        function f1() {
+            let sug = prompt('your suggession please.');
+            document.getElementById("result").innerHTML = sug;
+        }
+        function f2() {
+            let ans = confirm('Want to delete suggession?');
+            if (ans) {
+                document.getElementById("result").innerHTML = "";
+            }
+        }
+
+    </script>
+</head>
+<body onload="sayHello()">
+    <h2>welcome team</h2>
+    <button type="button" onclick="f1()">Click Me</button>
+    <p id="result"></p>
+    <button type="button" onclick="f2()">Remove Data</button>
+</body>
+</html>

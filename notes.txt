@@ -609,11 +609,6 @@ array methods:
 	for string arrays.
 
 
-built-in functions:
--------------------
-1) alert()
-2) prompt()
-3) confirm()
 
 	
 JSON:
@@ -639,49 +634,21 @@ back quote (back tick)
 we can combine variables and literals to form an expression.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//declaring and defining functions
-
-function f1(){
-    console.log("function with no params and no return");    
+defining functions:
+-------------------
+function  functionName(arg-1, arg-2, ...) {
+	st-1;
+	st-2;
+	...
+	return value;
 }
 
-function f2(userName){
-    console.log("function with params and no return");    
-    console.log("received " + userName);
-}
-            
-function f3(userName){
-    console.log("function with params and return");    
-    console.log("received " + userName);
-    return "Hello " + userName;
-}
 
-//call them
-f1();
-f2("Vamsy");
-console.log(f3("Kiran"));
-
-
+built-in functions:
+-------------------
+1) alert()		: to display a message in the form of a small window
+2) prompt()		: to accept data from the user
+3) confirm()	: to take confirmation from the user.
 
 
 
