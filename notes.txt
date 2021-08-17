@@ -550,6 +550,72 @@ library functions
 	g) trunc(n)
 	h) random()	: return a number between 0 and 1 randomly 
 
+3) Date class
+	let today = new Date();
+	let dob = new Date("1966-04-09");
+
+	methods:
+	--------
+	a) getFullYear()
+	b) getDay()
+	c) getMonth()
+	d) toISOString()
+	e) toDateString()
+	f) toTimeString()
+
+array:
+------
+it is a linear collection of homogeneous data items stored under single name.
+in javascript, array is also an object.
+each cell is identified by its index.
+index always begin at 0.
+
+create an array:
+----------------
+arr1 = [];
+(or)
+arr1 = new Array();
+
+initializing an array:
+-----------------------
+courses = ['c', 'c++', 'core java', 'spring', 'hibernate', 'junit'];
+
+length property:
+	return no. of cells in the array.
+
+array methods:
+--------------
+1) push() :	used to add an element to array.
+2) pop() : to remove the last element.
+3) unshift() : adds a new element to an array (at the beginning)
+4) shift() : to remove the first element
+5) splice() : 
+	a) to add new items to an array
+		splice(pos_to_add, number_of_elements_to_be_removed, ...args)
+  
+    b) we can use splice() to remove items.
+   		splice(start_position, number_of_elements_to_be_removed)
+6) concat()
+	to join two or more arrays.
+
+7) slice()
+	The slice() method returns selected elements in an array, as a new array.
+
+	slice(start_index_inclusive [, end_index_exclusive])
+
+8)  join() : joins all array elements into a string.
+
+9) sort() : alphabetical (ASCII) order.
+	for string arrays.
+
+
+built-in functions:
+-------------------
+1) alert()
+2) prompt()
+3) confirm()
+
+	
 
 
 
@@ -564,66 +630,32 @@ library functions
 
 
 
-today = new Date();
-console.log(today);
 
-myDob = new Date("1985-06-11");
-console.log(myDob);
 
-age = today.getFullYear()-myDob.getFullYear();
-console.log(age);
 
-console.log(today.toISOString());
-console.log(today.toDateString());
-console.log(today.toTimeString());
 
-//ISO format: yyyy-mm-ddThh:mm:ss 
 
-name = "VAMSY";
+//declaring and defining functions
 
-for(i=0;i<name.length;i++){
-    console.log(name.substring(0,i+1));
+function f1(){
+    console.log("function with no params and no return");    
 }
 
+function f2(userName){
+    console.log("function with params and no return");    
+    console.log("received " + userName);
+}
+            
+function f3(userName){
+    console.log("function with params and return");    
+    console.log("received " + userName);
+    return "Hello " + userName;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-arr1 = [];
-arr2 = new Array();
-
-arr3 = ["Rahul","Vamsy","Uma","Latha","Srinu"];
-
-console.log(arr3);
-console.log(arr3.length);
-
-arr3.sort();
-console.log(arr3);
-
-arr1.push("Ant");
-arr1.push("Elephant");
-arr1.push("Tiger");
-arr1.push("Zebra");
-console.log(arr1);
-
-arr1.pop();
-console.log(arr1);
-
-arr3.splice(2,2);// startIndex,countToBeDeleted
-console.log(arr3);
-
-
+//call them
+f1();
+f2("Vamsy");
+console.log(f3("Kiran"));
 
 
 

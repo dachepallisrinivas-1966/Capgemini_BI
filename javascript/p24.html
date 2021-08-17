@@ -1,0 +1,34 @@
+<!-- design html form that accept your date of birth. display age in years. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+
+    <link href="p24.css" rel="stylesheet" />
+    <script src="p24.js"></script>
+
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>
+                <h2>Age Calculator</h2>
+            </legend>
+            <div class="block">
+                <label for="dob">Enter your date of birth:</label>
+                <input type="date" id="dob" />
+            </div>
+            <br />
+            <button type="button" onclick="calculateAge()">Calculate Age</button>
+            <hr />
+            <p>Age is <strong><span id="result"></span>&nbsp; Years</strong>
+        </fieldset>
+    </form>
+</body>
+
+</html>

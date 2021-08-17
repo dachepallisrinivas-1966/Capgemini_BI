@@ -1,0 +1,8 @@
+label {
+    display : inline-block;
+    width : 170px;
+    padding : 10px;
+}
+fieldset {
+    width: 500px;
+}

@@ -1,42 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Arithmetic Form</title>
-        <link href="p13.css" rel="stylesheet" />
-        
-    </head>
- 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Form</title>
+
+    <style>
+        label {
+            display : inline-block;
+            width : 140px;
+            padding : 10px;
+        }
+        fieldset {
+            width: 400px;
+        }
+    </style>
+
+</head>
 <body>
     <form>
         <fieldset>
-            <legend>
-                <h2>Calculations</h2>
-            </legend>
+            <legend><h2>Arithmetic Operations</h2></legend>
             <div class="block">
-                <label>Enter Number 1: </label>
-                <input type="text" id="num1"/>
+                <label>First Number:</label>
+                <input type="text" id="n1" />
+            </div>
+            <div class="block">
+                <label>Second Number:</label>
+                <input type="text" id="n2" />
+            </div>
+            <div class="block">
+                <label>Operation:</label>
+                <input type="text" id="op" />
             </div>
             <br />
-            <div class="block">
-                <label>Enter Number 2: </label>
-                <input type="text" id="num2"/>
-            </div>
-            <br />
-            <div class="block">
-                <label>Enter operator: </label>
-                <input type="text" id="op"/>
-            </div>
-            <br />
-            <button type="button" onclick="calc()">Calculate</button>
+            <button type="button" onclick="calculate()">Calculate</button>
             <hr />
-            <strong>Result: </strong>
-            <p id="result"></p>
+            <p id="result" />
         </fieldset>
     </form>
 
-    <script src="p13.js"></script>
-    </body>
- 
-</html>
+    <script type="text/javascript">
+        function calculate() {
+            let num1 = Number(document.getElementById("n1").value);
+            let num2 = Number(document.getElementById("n2").value);
+            let op = document.getElementById("op").value;
+            let result = 0;
+            switch (op)
+            {
+                case "+":
+                    result = num1 + num2;
+                    break;
+                case "-":
+                    result = num1 - num2;
+                    break;
+                case "*":
+                    result = num1 * num2;
+                    break;
+                case "/":
+                    result = num1 / num2;
+                    break;
+            }
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+    
+</body>
 
+
+</html>
